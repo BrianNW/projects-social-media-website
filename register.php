@@ -120,7 +120,7 @@ if(isset($_POST['register_button'])){
     if(empty($error_array)) {
         $password = md5($password);
 
-        //Generate a username by concatenating first & last names
+        //Generate a username by concatenating first & last name
         $username = strtolower($fname . "_" . $lname);
         $check_username_query = mysqli_query($con, "SELECT username FROM users WHERE username = '$username'");
 
