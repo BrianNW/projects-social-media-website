@@ -15,7 +15,7 @@ if(mysqli_connect_errno()){
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Swirlfeed</title>
+        <title>Swirlfeed - 2023</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
