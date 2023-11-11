@@ -1,7 +1,7 @@
 <?php
 
 //create new sql connection
-$conn = mysqli_connect("localhost", "root", "", "social");
+$conn = mysqli_connect("localhost", "root", "", "socialmediadb");
 
 //error check
 if(mysqli_connect_errno()){
@@ -21,7 +21,7 @@ if(mysqli_connect_errno()){
         <link rel="stylesheet" href="">
     </head>
     <body>
-    
+    <h1>Temp h1 heading - Home page</h1>
 
 
 

@@ -4,7 +4,7 @@
 session_start();
 
 //create new sql connection
-$conn = mysqli_connect("localhost", "root", "", "social");
+$conn = mysqli_connect("localhost", "root", "", "socialmediadb");
 
 //error check
 if(mysqli_connect_errno()){
@@ -131,7 +131,13 @@ if(isset($_POST['register_button'])){
             $username = $username . "_" . $i;
             $check_username_query = mysqli_query($con, "SELECT username FROM users WHERE username = '$username'");
         }
+
+        //profile pic assignment
+        $profile_pic = ""; 
+
     }
+
+ 
 
 
 }
