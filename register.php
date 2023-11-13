@@ -126,13 +126,14 @@ if(isset($_POST['register_button'])){
 
         $i = 0;
         //if username exists add number to username
+        // Future update - allow user to create custom username
         while(mysqli_num_rows($check_username_query) != 0) {
             $i++; //Add 1 to i
             $username = $username . "_" . $i;
             $check_username_query = mysqli_query($con, "SELECT username FROM users WHERE username = '$username'");
         }
 
-        //profile pic assignment
+        //profile pic assignment.
         $profile_pic = ""; 
 
     }
