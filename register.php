@@ -134,7 +134,12 @@ if(isset($_POST['register_button'])){
         }
 
         //profile pic assignment.
-        $profile_pic = ""; 
+        $rand = rand(1,2); //pick a random number between 1 and 2
+
+        if($rand == 1)
+            $profile_pic = "assets/images/profile_pics/defaults/head_deep_blue.png"; 
+        else if($rand == 2)
+            $profile_pic = "assets/images/profile_pics/defaults/head_deep_emerald.png"; 
 
     }
 
